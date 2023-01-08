@@ -15,7 +15,7 @@
 (function() {
   'use strict';
   if (document.querySelector('.badge_friends_have_earned_friends')) { //we only want to load if theres the 'friends with badge' block
-    const currentUrl = window.location.href
+    let currentUrl = window.location.href
     if (currentUrl.charAt(currentUrl.length - 1) == '/') { currentUrl = currentUrl.substring(0, currentUrl.length - 1) }
     const urlArray = currentUrl.split('/')
     const finalUrlPath = `/${urlArray[urlArray.length - 2]}/${urlArray[urlArray.length - 1]}`
